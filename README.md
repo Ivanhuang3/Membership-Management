@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/9203c633-e9fa-4859-8154-4895b10c4191)
+
+
 # 🏢 會員管理系統前端介面
 
 這是一個與 spring1-membercontrol7 後端配套的簡易會員管理前端介面。
@@ -11,6 +14,12 @@
 - ✅ **搜尋會員** - 根據帳號或姓名關鍵字搜尋
 - ✅ **響應式設計** - 支援手機、平板、桌機
 - ✅ **即時提示** - 操作結果即時反饋
+
+##  技術架構：
+-  **前端**：原生 HTML + CSS + JavaScript
+-  **後端**：Spring Boot + REST API
+-  **資料庫**：MySQL（透過 MAMP）
+-  **通訊**：AJAX + JSON
 
 ## 🚀 啟動方式
 
