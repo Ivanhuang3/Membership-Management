@@ -18,7 +18,7 @@
 
 ##  技術架構：
 -  **前端**：原生 HTML + CSS + JavaScript
--  **後端**：Spring Boot + REST API
+-  **後端**：Spring Boot + REST API (JAVA version:17,mvn:3.9.9)
 -  **資料庫**：MySQL（透過 MAMP）
 -  **通訊**：AJAX + JSON
 
