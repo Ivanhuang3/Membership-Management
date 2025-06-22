@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員管理系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 會員管理系統</h1>
+            <p>簡易的會員資料管理介面</p>
+        </header>
+
+        <!-- 搜尋區域 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜尋帳號或姓名...">
+                <button onclick="searchMembers()">🔍 搜尋</button>
+                <button onclick="loadAllMembers()">📋 顯示全部</button>
+            </div>
+        </div>
+
+        <!-- 新增會員區域 -->
+        <div class="form-section">
+            <h2>➕ 新增/編輯會員</h2>
+            <form id="memberForm">
+                <input type="hidden" id="memberId">
+                <div class="form-group">
+                    <label for="account">帳號：</label>
+                    <input type="text" id="account" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwd">密碼：</label>
+                    <input type="password" id="passwd" required>
+                </div>
+                <div class="form-group">
+                    <label for="realname">真實姓名：</label>
+                    <input type="text" id="realname" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" id="submitBtn">💾 新增會員</button>
+                    <button type="button" onclick="resetForm()">🔄 重置表單</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- 會員列表區域 -->
+        <div class="members-section">
+            <h2>👥 會員列表</h2>
+            <div id="loadingMessage" class="loading">載入中...</div>
+            <div id="membersList" class="members-grid"></div>
+        </div>
+
+        <!-- 訊息提示區域 -->
+        <div id="messageBox" class="message-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
