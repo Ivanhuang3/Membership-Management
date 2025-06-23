@@ -17,7 +17,7 @@ src/main/java/com/example/demo/
 
 ## 資料庫設定
 
-本專案使用 MySQL 資料庫，請先確保您已經建立了 `north` 資料庫並創建以下資料表：
+本專案使用 MySQL 資料庫，請先確保您已經建立了 `member` 資料庫並創建以下資料表：
 
 ```sql
 CREATE TABLE IF NOT EXISTS member (
